@@ -50,7 +50,7 @@ resource "aws_db_instance" "default" {
   parameter_group_name   = var.parameter_group_name
   skip_final_snapshot    = var.skip_final_snapshot
   publicly_accessible    = true
-  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  //vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
 }
 
 data "aws_secretsmanager_secret" "mysql" {
