@@ -20,6 +20,7 @@ provider "aws" {
 }
 
 #create a security group for RDS Database Instance
+/*
 resource "aws_security_group" "rds_sg" {
   name = "rds_sg"
   ingress {
@@ -35,6 +36,8 @@ resource "aws_security_group" "rds_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+*/
+
 
 resource "aws_db_instance" "default" {
   allocated_storage      = var.allocated_storage
@@ -50,7 +53,7 @@ resource "aws_db_instance" "default" {
   parameter_group_name   = var.parameter_group_name
   skip_final_snapshot    = var.skip_final_snapshot
   publicly_accessible    = true
-  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  #vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
 }
 
 data "aws_secretsmanager_secret" "mysql" {
