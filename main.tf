@@ -20,8 +20,8 @@ provider "aws" {
 }
 
 #create a security group for RDS Database Instance
-resource "aws_security_group" "rds_sg" {
-  name = "rds_sg"
+resource "aws_security_group" "rds_sg_pagamento" {
+  name = "rds_sg_pagamento"
   ingress {
     from_port   = 3306
     to_port     = 3306
@@ -50,7 +50,7 @@ resource "aws_db_instance" "default" {
   parameter_group_name   = var.parameter_group_name
   skip_final_snapshot    = var.skip_final_snapshot
   publicly_accessible    = true
-  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  vpc_security_group_ids = ["${aws_security_group.rds_sg_pagamento.id}"]
 }
 
 data "aws_secretsmanager_secret" "mysql" {
