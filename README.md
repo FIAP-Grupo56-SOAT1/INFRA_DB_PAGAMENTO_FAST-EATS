@@ -13,8 +13,3 @@ O objetivo deste projeto é fornecer uma infraestrutura escalável e gerenciáve
 - **Amazon RDS**: Utilizamos o serviço de banco de dados relacional gerenciado da Amazon Web Services (AWS) para garantir alta disponibilidade, escalabilidade e segurança.
 
 - **MySQL**: O MySQL é o sistema de gerenciamento de banco de dados relacional escolhido para este projeto devido à sua confiabilidade e eficiência.
-
-
-
-
-
