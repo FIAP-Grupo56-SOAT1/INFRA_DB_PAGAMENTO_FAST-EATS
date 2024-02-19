@@ -31,5 +31,5 @@ variable "skip_final_snapshot" {
 }
 
 variable "identifier" {
-  default = "mysql-pedido"
+  default = "mysql-pagamento"
 }
