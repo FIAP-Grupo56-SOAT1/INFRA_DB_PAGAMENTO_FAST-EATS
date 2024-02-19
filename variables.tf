@@ -29,3 +29,7 @@ variable "skip_final_snapshot" {
   default     = "true"
   type        = string
 }
+
+variable "identifier" {
+  default = "mysql-pedido"
+}
