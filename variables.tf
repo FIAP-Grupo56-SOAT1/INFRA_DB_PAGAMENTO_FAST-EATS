@@ -33,3 +33,20 @@ variable "skip_final_snapshot" {
 variable "identifier" {
   default = "mysql-pagamento"
 }
+
+variable "publicly_accessible" {
+  type = bool
+  default = true
+}
+
+variable "nome-db-servico" {
+  default = "pagamento"
+}
+
+variable "engine" {
+  default = "mysql"
+}
+
+variable "backup_retention_period" {
+  default = 0
+}
