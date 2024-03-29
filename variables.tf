@@ -11,7 +11,7 @@ variable "storage_type" {
 
 variable "instance_class" {
   description = "The RDS instance class"
-  default     = "db.t2.micro"
+  default     = "db.t3.micro"
   type        = string
 }
 variable "parameter_group_name" {
