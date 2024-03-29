@@ -1,6 +1,6 @@
 # Infraestrutura de Banco de Dados com RDS e MySQL
 
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/FIAP-Grupo56-SOAT1/INFRA_DB_FAST-EATS/main-pipeline.yml?logo=github)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/FIAP-Grupo56-SOAT1/INFRA_DB_PAGAMENTO_FAST-EATS/deploy-producao.yml?logo=github)
 
 Este repositório é dedicado à configuração e gerenciamento da infraestrutura de banco de dados utilizando Amazon RDS e MySQL.
 
